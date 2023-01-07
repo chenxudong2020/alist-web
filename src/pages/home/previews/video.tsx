@@ -12,22 +12,9 @@ import { currentLang } from "~/app/i18n"
 import { SelectWrapper } from "~/components"
 
 const players: { icon: string; name: string; scheme: string }[] = [
-  { icon: "iina", name: "IINA", scheme: "iina://weblink?url=$durl" },
-  { icon: "potplayer", name: "PotPlayer", scheme: "potplayer://$durl" },
-  { icon: "vlc", name: "VLC", scheme: "vlc://$durl" },
-  { icon: "nplayer", name: "nPlayer", scheme: "nplayer-$durl" },
-  {
-    icon: "mxplayer",
-    name: "MX Player",
-    scheme:
-      "intent:$durl#Intent;package=com.mxtech.videoplayer.ad;S.title=$name;end",
-  },
-  {
-    icon: "mxplayer-pro",
-    name: "MX Player Pro",
-    scheme:
-      "intent:$durl#Intent;package=com.mxtech.videoplayer.pro;S.title=$name;end",
-  },
+ 
+  { icon: "vlc", name: "VLC插件播放", scheme: "$durl" },
+  
 ]
 
 const Preview = () => {
